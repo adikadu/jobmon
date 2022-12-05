@@ -1,0 +1,53 @@
+.stats {
+  padding: 2rem 4rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.4rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+.graph-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.graph-container p {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+
+.btn-toggle-graph {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  word-spacing: 2px;
+  color: var(--primary-500);
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1210px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .stats {
+    padding: 2rem;
+  }
+}

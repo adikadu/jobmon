@@ -1,0 +1,57 @@
+.outer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 0 1rem;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem 0;
+}
+
+.register-form img {
+  margin-bottom: 1rem;
+}
+
+.register-form button {
+  font-size: 1rem;
+}
+
+.register-form span {
+  color: var(--primary-600);
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  cursor: pointer;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.btn-demo-app {
+  display: block;
+  width: 100%;
+  background-color: var(--primary-200);
+  color: var(--primary-600);
+  margin-bottom: 1.4rem;
+  transition: 0.6s ease-in-out all;
+}
+
+.btn-demo-app:hover {
+  color: var(--primary-200);
+}
+
+@media screen and (max-width: 420px) {
+  .register-form {
+    padding: 1rem 0.6rem 0;
+  }
+}

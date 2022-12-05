@@ -1,0 +1,43 @@
+.error {
+  margin-top: 4rem;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.error img {
+  width: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.error h3,
+.error p {
+  margin-bottom: 0;
+}
+
+.error p {
+  color: var(--grey-500);
+}
+
+.error a {
+  text-transform: capitalize;
+  color: var(--primary-600);
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 470px) {
+  .error {
+    padding: 1rem;
+  }
+  .error h3 {
+    font-size: 1.8rem;
+  }
+
+  .error p,
+  .error a {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,85 @@
+.stats-card {
+  background-color: var(--white);
+  padding: 1.4rem 2rem 0;
+  border-radius: 8px;
+  box-shadow: var(--shadow-1);
+}
+
+.stats-card.pending {
+  border-bottom: 6px solid rgb(233, 185, 73);
+}
+
+.stats-card.interview {
+  border-bottom: 6px solid rgb(100, 122, 203);
+}
+
+.stats-card.declined {
+  border-bottom: 6px solid rgb(214, 106, 106);
+}
+
+.num {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.4rem;
+}
+
+.num span {
+  font-size: 2.6rem;
+  font-weight: bold;
+}
+
+.stats-card.pending .num span {
+  color: rgb(233, 185, 73);
+}
+
+.stats-card.interview .num span {
+  color: rgb(100, 122, 203);
+}
+
+.stats-card.declined .num span {
+  color: rgb(214, 106, 106);
+}
+
+.icon {
+  padding: 0.6rem;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stats-card.pending .icon {
+  background-color: rgb(252, 239, 199);
+}
+
+.stats-card.interview .icon {
+  background-color: rgb(224, 232, 249);
+}
+
+.stats-card.declined .icon {
+  background-color: rgb(255, 238, 238);
+}
+
+.icon svg {
+  font-size: 1.8rem;
+}
+
+.stats-card.pending .icon svg {
+  color: rgb(233, 185, 73);
+}
+
+.stats-card.interview .icon svg {
+  color: rgb(100, 122, 203);
+}
+
+.stats-card.declined .icon svg {
+  color: rgb(214, 106, 106);
+}
+
+.stats-card p {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}

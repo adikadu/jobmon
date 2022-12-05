@@ -1,0 +1,15 @@
+.shared-layout {
+  position: relative;
+}
+
+.disp-grid {
+  display: grid;
+  grid-template-columns: 16rem 1fr;
+  height: 90.5vh;
+}
+
+@media screen and (max-width: 900px) {
+  .disp-grid {
+    grid-template-columns: 1fr;
+  }
+}

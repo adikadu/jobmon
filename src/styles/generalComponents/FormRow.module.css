@@ -1,0 +1,29 @@
+.form-row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 0;
+  align-items: flex-start;
+  letter-spacing: 1px;
+}
+
+.form-row label {
+  text-transform: capitalize;
+}
+
+.form-row input,
+.form-select {
+  width: 100%;
+  background-color: var(--grey-100);
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  padding: 0.4rem 0.6rem;
+  letter-spacing: 1px;
+  border: 1px solid var(--grey-200);
+}
+
+.form-row input:focus {
+  outline: 2px solid var(--black);
+  color: var(--black);
+}

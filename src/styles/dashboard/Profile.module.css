@@ -1,0 +1,32 @@
+.main-content {
+  background-color: var(--white);
+  width: 90%;
+  margin: 3.2rem auto 0;
+  padding: 2rem;
+  box-shadow: var(--shadow-2);
+  border-radius: var(--borderRadius);
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.btn--submit {
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1150px) {
+  .form {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+}

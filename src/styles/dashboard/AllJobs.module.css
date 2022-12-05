@@ -1,0 +1,111 @@
+.main-content {
+  width: 90%;
+  margin: 3.2rem auto;
+}
+
+.search-form {
+  background-color: var(--white);
+  padding: 2rem;
+  padding-bottom: 3.2rem;
+  box-shadow: var(--shadow-2);
+  border-radius: var(--borderRadius);
+  margin-bottom: 4rem;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.btn--clear {
+  color: var(--red-dark);
+  background-color: var(--red-light);
+  font-size: 1rem;
+}
+
+.btn--clear:hover {
+  background-color: var(--red-dark);
+  color: var(--white);
+}
+
+.job-list {
+  margin-bottom: 2.8rem;
+}
+
+.job-list p {
+  font-size: 1.4rem;
+  font-weight: bold;
+  word-spacing: 2px;
+  letter-spacing: var(--letterSpacing);
+}
+
+.jobs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.pagination button {
+  border: none;
+  padding: 0.6rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  font-size: 1rem;
+  border-radius: var(--borderRadius);
+  background-color: var(--white);
+  color: var(--primary-600);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: var(--primary-600);
+  color: var(--white);
+}
+
+.page-no {
+  border-radius: var(--borderRadius);
+  overflow: hidden;
+}
+
+.page-no span {
+  background-color: var(--primary-200);
+  color: var(--primary-600);
+  padding: 0.6rem 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.page-no span.curr-page {
+  background-color: var(--primary-600);
+  color: var(--white);
+}
+
+@media screen and (max-width: 1150px) {
+  .form {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+  .jobs {
+    grid-template-columns: 1fr;
+  }
+}

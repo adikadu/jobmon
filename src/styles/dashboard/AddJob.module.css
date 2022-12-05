@@ -1,0 +1,47 @@
+.main-content {
+  background-color: var(--white);
+  width: 90%;
+  margin: 3.2rem auto 0;
+  padding: 2rem;
+  box-shadow: var(--shadow-2);
+  border-radius: var(--borderRadius);
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btns button {
+  width: 47%;
+  font-size: 1rem;
+}
+
+.btn--clear {
+  background-color: var(--grey-500);
+}
+
+.btn--clear:hover {
+  background-color: var(--black);
+}
+
+@media screen and (max-width: 1150px) {
+  .form {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,111 @@
+.job {
+  background-color: var(--white);
+  border-radius: var(--borderRadius);
+  box-shadow: var(--shadow-3);
+}
+
+.top-details {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+  padding-bottom: 0;
+  align-items: flex-start;
+  border-bottom: 1px solid var(--grey-300);
+  margin-bottom: 1rem;
+}
+
+.logo {
+  background-color: var(--primary-500);
+  color: var(--white);
+  padding: 0.3rem 1rem;
+  border-radius: var(--borderRadius);
+}
+
+.pos-comp p {
+  margin-bottom: 0;
+  text-transform: capitalize;
+}
+
+.pos-comp span {
+  color: var(--grey-400);
+}
+
+.other-details {
+  padding: 1rem;
+  padding-top: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 1rem;
+}
+
+.other-details span {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  text-transform: capitalize;
+}
+
+.other-details span svg {
+  color: var(--grey-400);
+}
+
+.status {
+  width: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--borderRadius);
+  text-align: center;
+  letter-spacing: var(--letterSpacing);
+  text-transform: capitalize;
+}
+
+.status.interview {
+  background-color: rgb(224, 232, 249);
+  color: rgb(100, 122, 203);
+}
+
+.status.declined {
+  background-color: rgb(255, 238, 238);
+  color: rgb(214, 106, 106);
+}
+
+.status.pending {
+  background-color: rgb(252, 239, 199);
+  color: rgb(233, 185, 73);
+}
+
+.btns {
+  padding: 1rem;
+  padding-top: 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn--edit,
+.btn--delete {
+  border: none;
+  padding: 0.4rem;
+  border-radius: var(--borderRadius);
+  font-size: 1rem;
+  letter-spacing: var(--letterSpacing);
+  box-shadow: var(--shadow-1);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.btn--edit:hover,
+.btn--delete:hover {
+  box-shadow: var(--shadow-3);
+}
+
+.btn--edit {
+  background-color: var(--green-light);
+  color: var(--green-dark);
+}
+
+.btn--delete {
+  background-color: var(--red-light);
+  color: var(--red-dark);
+}

@@ -1,0 +1,29 @@
+.card {
+  background-color: var(--white);
+  box-shadow: var(--shadow-4);
+  border-radius: var(--borderRadius);
+  overflow: hidden;
+}
+
+.top-line {
+  height: 4px;
+  background-color: red;
+}
+
+.animate {
+  animation: moveline 5000ms linear 1 forwards;
+  transform-origin: left;
+}
+
+@keyframes moveline {
+  from {
+    transform: scaleX(1);
+  }
+  to {
+    transform: scaleX(0);
+  }
+}
+
+.blue {
+  background-color: var(--primary-500);
+}
