@@ -14,7 +14,6 @@ export default function Stats() {
   const monthlyApplications = useSelector(
     (state) => state.allJobs.monthlyApplications
   );
-  console.log("monthlyApplications", monthlyApplications);
   const [isAreaChart, setIsAreaChart] = useState(true);
   useEffect(() => {
     dispatch(showStats());
