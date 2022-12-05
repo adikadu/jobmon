@@ -1,4 +1,5 @@
-# JOBMON - A React Webapp To Track All your Job Applications
+# JOBMON
+A React Webapp To Track All your Job Applications
 
 Site link: https://jobmon.netlify.app/
 
