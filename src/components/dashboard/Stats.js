@@ -40,11 +40,15 @@ export default function Stats() {
         >
           {isAreaChart ? "area chart" : "bar chart"}
         </button>
-        {isAreaChart ? (
-          <AreaChartContainer data={monthlyApplications} />
-        ) : (
-          <BarChartContainer data={monthlyApplications} />
-        )}
+        <div className={classes["chart-outer-wrapper"]}>
+          <div className={classes["chart-inner-wrapper"]}>
+            {isAreaChart ? (
+              <AreaChartContainer data={monthlyApplications} />
+            ) : (
+              <BarChartContainer data={monthlyApplications} />
+            )}
+          </div>
+        </div>
       </div>
     </section>
   );
